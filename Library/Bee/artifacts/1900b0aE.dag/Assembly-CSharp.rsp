@@ -361,8 +361,9 @@
 "Assets/Scripts/TestMono.cs"
 "Assets/Scripts/TestNomono.cs"
 "Assets/Scripts/Test_MicrophoneWrapper.cs"
-"Assets/Utility/MessageManager.cs"
-"Assets/Utility/Singleton.cs"
+"Assets/Utility/Event/MessageManager.cs"
+"Assets/Utility/Pool/PoolManager.cs"
+"Assets/Utility/Singleton/Singleton.cs"
 -langversion:9.0
 
 /deterministic

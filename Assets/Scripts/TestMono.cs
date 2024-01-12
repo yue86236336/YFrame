@@ -10,7 +10,7 @@ public class TestMono : MonoSingleton<TestMono>
         return s.ToUpper();
     }
 
-    public override void Awake()
+    protected override void Awake()
     {
         base.Awake();
         Debug.Log("重写");
