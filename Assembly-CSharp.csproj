@@ -62,19 +62,51 @@
     <Analyzer Include="C:\Users\Wy\.vscode\extensions\visualstudiotoolsforunity.vstuc-0.9.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ProjectBase\AStar\AStarMgr.cs" />
+    <Compile Include="Assets\Utility\Json\AddSerializedJson.cs" />
+    <Compile Include="Assets\Utility\Camera\MyCam.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Base\SingletonAutoMono.cs" />
+    <Compile Include="Assets\Utility\Audio\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\UI\BasePanel.cs" />
     <Compile Include="Assets\Scripts\Example.cs" />
+    <Compile Include="Assets\Utility\Event\UIPointerEvent.cs" />
+    <Compile Include="Assets\Utility\UI\UIType.cs" />
     <Compile Include="Assets\Scripts\TestNomono.cs" />
+    <Compile Include="Assets\Utility\Json\LocalConfig.cs" />
+    <Compile Include="Assets\Utility\UI\UIManager.cs" />
+    <Compile Include="Assets\Utility\SkipUnityLogo.cs" />
     <Compile Include="Assets\Scripts\MicroPhoneTest.cs" />
+    <Compile Include="Assets\Utility\Pool\PoolManager.cs" />
     <Compile Include="Assets\Utility\Singleton\Singleton.cs" />
     <Compile Include="Assets\Scripts\MicrophoneWrapper.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Event\EventCenter.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Pool\PoolMgr.cs" />
     <Compile Include="Assets\Utility\Event\MessageManager.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Base\SingletonMono.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Scenes\ScenesMgr.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\AStar\AStarNode.cs" />
+    <Compile Include="Assets\Utility\Res\ResManager.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Mono\MonoController.cs" />
     <Compile Include="Assets\Scripts\TestMono.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Mono\MonoMgr.cs" />
+    <Compile Include="Assets\Utility\UI\BasePanel.cs" />
     <Compile Include="Assets\Scripts\EventTest.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Base\BaseManager.cs" />
     <Compile Include="Assets\Scripts\Test_MicrophoneWrapper.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\MicroPhoneRecord.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Music\MusicMgr.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Res\ResMgr.cs" />
+    <Compile Include="Assets\Utility\AB\ABManager.cs" />
+    <Compile Include="Assets\Utility\Event\MouseAction.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Input\InputMgr.cs" />
     <Compile Include="Assets\Scripts\TestMicro.cs" />
-    <Compile Include="Assets\Utility\Pool\PoolManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Mode\Shader\FX01.shader" />
+    <None Include="Assets\Utility\LitJSON.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -403,6 +435,10 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\Unity\2021.3.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LitJSON">
+      <HintPath>Assets\Utility\LitJSON.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DOTween">

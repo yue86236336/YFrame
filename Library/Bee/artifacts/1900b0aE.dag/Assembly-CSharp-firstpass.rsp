@@ -121,6 +121,7 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/Plugins/DOTween/DOTween.dll"
+-r:"Assets/Utility/LitJSON.dll"
 -r:"D:/Unity/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/Unity/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"D:/Unity/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -350,6 +351,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
 "Assets/Plugins/DOTween/Modules/DOTweenModuleAudio.cs"
 "Assets/Plugins/DOTween/Modules/DOTweenModulePhysics.cs"
 "Assets/Plugins/DOTween/Modules/DOTweenModulePhysics2D.cs"
