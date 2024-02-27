@@ -45,7 +45,7 @@ public class ScenesMgr : BaseManager<ScenesMgr>
     {
         AsyncOperation ao = SceneManager.LoadSceneAsync(name);
         //可以得到场景加载的一个进度
-        while(!ao.isDone)
+        while (!ao.isDone)
         {
             //事件中心 向外分发 进度情况  外面想用就用
             EventCenter.GetInstance().EventTrigger("进度条更新", ao.progress);
@@ -53,6 +53,6 @@ public class ScenesMgr : BaseManager<ScenesMgr>
             yield return ao.progress;
         }
         //加载完成过后 才会去执行fun
-        fun();
+        fun?.Invoke();
     }
 }

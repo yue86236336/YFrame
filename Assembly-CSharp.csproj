@@ -72,6 +72,7 @@
     <Compile Include="Assets\Utility\Event\UIPointerEvent.cs" />
     <Compile Include="Assets\Utility\UI\UIType.cs" />
     <Compile Include="Assets\Scripts\TestNomono.cs" />
+    <Compile Include="Assets\Utility\Scene\SceneMgr.cs" />
     <Compile Include="Assets\Utility\Json\LocalConfig.cs" />
     <Compile Include="Assets\Utility\UI\UIManager.cs" />
     <Compile Include="Assets\Utility\SkipUnityLogo.cs" />
@@ -81,7 +82,7 @@
     <Compile Include="Assets\Scripts\MicrophoneWrapper.cs" />
     <Compile Include="Assets\Scripts\ProjectBase\Event\EventCenter.cs" />
     <Compile Include="Assets\Scripts\ProjectBase\Pool\PoolMgr.cs" />
-    <Compile Include="Assets\Utility\Event\MessageManager.cs" />
+    <Compile Include="Assets\Utility\Event\EventCenter.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\ProjectBase\Base\SingletonMono.cs" />
     <Compile Include="Assets\Scripts\ProjectBase\Scenes\ScenesMgr.cs" />
@@ -103,6 +104,9 @@
     <Compile Include="Assets\Utility\Event\MouseAction.cs" />
     <Compile Include="Assets\Scripts\ProjectBase\Input\InputMgr.cs" />
     <Compile Include="Assets\Scripts\TestMicro.cs" />
+    <Compile Include="Assets\Utility\Mono\MonoMgr.cs" />
+    <Compile Include="Assets\Utility\Mono\MonoController.cs" />
+    <Compile Include="Assets\ChangeScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mode\Shader\FX01.shader" />

@@ -29,7 +29,7 @@ namespace YF
         public void LoadAsync<T>(string name, UnityAction<T> callback) where T : Object
         {
             //开启异步加载的协程
-            MonoMgr.GetInstance().StartCoroutine(ReallyLoadAsync(name, callback));
+            MonoMgr.Instance.StartCoroutine(ReallyLoadAsync(name, callback));
         }
 
         //真正的协同程序函数，用于开启异步加载对应的资源

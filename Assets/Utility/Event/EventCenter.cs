@@ -6,9 +6,10 @@ namespace YF
     public enum MessageType
     {
         //在这里添加消息类型
+        sceneLoadProcess = 1
     }
 
-    public class MessageManager : MonoSingleton<MessageManager>
+    public class EventCenter : MonoSingleton<EventCenter>
     {
         private readonly Dictionary<int, List<Delegate>> dic = new Dictionary<int, List<Delegate>>();
 

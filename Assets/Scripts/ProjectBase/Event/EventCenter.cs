@@ -13,7 +13,7 @@ public class EventInfo<T> : IEventInfo
 {
     public UnityAction<T> actions;
 
-    public EventInfo( UnityAction<T> action)
+    public EventInfo(UnityAction<T> action)
     {
         actions += action;
     }
@@ -52,14 +52,14 @@ public class EventCenter : BaseManager<EventCenter>
     {
         //有没有对应的事件监听
         //有的情况
-        if( eventDic.ContainsKey(name) )
+        if (eventDic.ContainsKey(name))
         {
             (eventDic[name] as EventInfo<T>).actions += action;
         }
         //没有的情况
         else
         {
-            eventDic.Add(name, new EventInfo<T>( action ));
+            eventDic.Add(name, new EventInfo<T>(action));
         }
     }
 
@@ -117,7 +117,7 @@ public class EventCenter : BaseManager<EventCenter>
         if (eventDic.ContainsKey(name))
         {
             //eventDic[name]();
-            if((eventDic[name] as EventInfo<T>).actions != null)
+            if ((eventDic[name] as EventInfo<T>).actions != null)
                 (eventDic[name] as EventInfo<T>).actions.Invoke(info);
             //eventDic[name].Invoke(info);
         }
